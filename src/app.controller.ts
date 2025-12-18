@@ -9,8 +9,8 @@ export class AppController {
   getHello(): any {
     return this.appService.getHello();
   }
-  @Get('health')
+  @Get()
   health(): any {
-    return this.appService.getHealth();
+    return this.appService.health();
    }
 }
